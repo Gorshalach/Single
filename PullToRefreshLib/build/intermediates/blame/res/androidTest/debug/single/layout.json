@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    },
+    {
+        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    }
+]

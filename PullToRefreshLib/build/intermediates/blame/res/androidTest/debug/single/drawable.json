@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable\\indicator_bg_top.xml"
+    }
+]

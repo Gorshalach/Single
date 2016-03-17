@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_rotate.png",
+        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
+        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
+        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\indicator_arrow.png"
+    },
+    {
+        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\default_ptr_rotate.png",
+        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\default_ptr_rotate.png"
+    }
+]
