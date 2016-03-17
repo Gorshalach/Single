@@ -1,6 +1,7 @@
 package com.example.pangxiezi.single.model;
 
 
+import com.example.pangxiezi.single.model.impl.ArticleModelImpl;
 import com.example.pangxiezi.single.model.impl.PageModelIpml;
 
 /**
@@ -17,4 +18,9 @@ public class ModelFactory {
     }
 
     public PageModelIpml getHomepageModelImpl(){return new PageModelIpml();}
+
+
+    public ArticleModelImpl getArticleModelImpl() {
+        return new ArticleModelImpl();
+    }
 }

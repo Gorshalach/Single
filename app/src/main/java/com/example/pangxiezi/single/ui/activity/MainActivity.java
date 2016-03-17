@@ -32,7 +32,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         initEvent();
         mainLayout.setLongClickable(true);
         mainLayout.setOnTouchListener(new MyGestureListener(this));
-//        startActivity(new Intent(this, ArticleActivity.class));
 
     }
 
