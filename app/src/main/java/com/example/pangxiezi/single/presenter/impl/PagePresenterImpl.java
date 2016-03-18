@@ -1,5 +1,6 @@
 package com.example.pangxiezi.single.presenter.impl;
 
+import com.example.pangxiezi.single.bean.PageDataEntity;
 import com.example.pangxiezi.single.bean.PageEntity;
 import com.example.pangxiezi.single.model.ModelFactory;
 import com.example.pangxiezi.single.presenter.PagePresenter;

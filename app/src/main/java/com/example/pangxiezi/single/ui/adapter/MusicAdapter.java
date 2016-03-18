@@ -55,7 +55,7 @@ public class MusicAdapter  extends RecyclerView.Adapter<MusicAdapter.MusicAdapte
     public void onClick(View v) {
         if (listener != null){
             int position = recyclerView.getChildAdapterPosition(v);
-            listener.AdapterChildClickListener(v ,position,datas.get(position));
+            listener.ChildClickListener(v ,position,datas.get(position));
         }
     }
 
@@ -71,6 +71,6 @@ public class MusicAdapter  extends RecyclerView.Adapter<MusicAdapter.MusicAdapte
         }
     }
     public interface AdapterChildClickListener{
-        public void AdapterChildClickListener(View v, int position, PageDataEntity entity);
+        public void ChildClickListener(View v, int position, PageDataEntity entity);
     }
 }
