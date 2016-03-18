@@ -9,9 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.pangxiezi.single.R;
-import com.example.pangxiezi.single.bean.ArticleDataEntity;
 import com.example.pangxiezi.single.bean.PageDataEntity;
-import com.example.pangxiezi.single.ui.activity.ArticleActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

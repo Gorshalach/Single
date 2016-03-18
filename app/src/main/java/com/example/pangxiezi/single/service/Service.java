@@ -1,7 +1,6 @@
 package com.example.pangxiezi.single.service;
 
 
-import com.example.pangxiezi.single.bean.ArticleEntity;
 import com.example.pangxiezi.single.bean.PageEntity;
 
 import java.util.Map;
@@ -24,12 +23,5 @@ public interface Service {
     Call<PageEntity> getHomeEntity(@QueryMap Map<String,String> map);
 
 
-    /**
-     * 文章
-     * @param map
-     * @return
-     */
-    @POST("/?c=Api&a=getList")
-    Call<ArticleEntity> getArticleEntity(@QueryMap Map<String, String> map);
 
 }
