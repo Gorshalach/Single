@@ -3,18 +3,40 @@ package com.example.pangxiezi.single.ui.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.example.pangxiezi.single.R;
+import com.example.pangxiezi.single.bean.PageDataEntity;
+import com.example.pangxiezi.single.bean.PageEntity;
+import com.example.pangxiezi.single.presenter.PagePresenter;
+import com.example.pangxiezi.single.presenter.impl.PagePresenterImpl;
+import com.example.pangxiezi.single.ui.adapter.HomeAdapter;
 import com.example.pangxiezi.single.ui.widget.GestureListener;
+import com.example.pangxiezi.single.view.PageView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends BaseActivity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements PageView, View.OnClickListener, HomeAdapter.OnChildClickListener {
+
+    private static final String URL = "URL";
+
+    @Bind(R.id.main_recycler)
+    RecyclerView mainRecycler;
+    private HomeAdapter adapter;
+    private List<PageDataEntity> pageDataEntities;
+
+    private PagePresenter pagePresenter;
+    private int page, model, paget_Id, create_time;
 
 
     @Bind(R.id.ment_ibtn)
@@ -29,6 +51,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        pagePresenter = new PagePresenterImpl(page, model, paget_Id, create_time, this);
+        pagePresenter.getEntityData();
+
+        mainRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+
         initEvent();
         mainLayout.setLongClickable(true);
         mainLayout.setOnTouchListener(new MyGestureListener(this));
@@ -61,6 +89,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
     }
 
+    @Override
+    public void onChildClick(View child, int positon, String url) {
+        Toast.makeText(this, url, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(URL, url);
+        startActivity(intent);
+    }
+
     /**
      * 继承GestureListener，重写left和right方法
      */
@@ -85,5 +121,20 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             return super.right();
         }
     }
+
+
+    @Override
+    public void getData(PageEntity entity) {
+        pageDataEntities = entity.getDatas();
+        adapter = new HomeAdapter(this, pageDataEntities);
+        mainRecycler.setAdapter(adapter);
+        adapter.setOnChildClickListener(this);
+    }
+
+    @Override
+    public void shoeError() {
+        Toast.makeText(this, "网络连接错误......", Toast.LENGTH_LONG).show();
+    }
+
 
 }

@@ -89,13 +89,15 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener, 
         switch (menuName) {
             case "首页":
                 Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, MainActivity.class));
                 break;
             case "文字":
                 Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MenuActivity.this, ArticleActivity.class));
+                startActivity(new Intent(this, ArticleActivity.class));
                 break;
             case "声音":
                 Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, MusicActivity.class));
                 break;
             case "影像":
                 Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();

@@ -1,11 +1,14 @@
 package com.example.pangxiezi.single.ui.activity;
 
+import android.content.Intent;
+import android.support.v4.app.ShareCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.pangxiezi.single.R;
 import com.example.pangxiezi.single.bean.PageDataEntity;
@@ -17,8 +20,9 @@ import com.example.pangxiezi.single.view.PageView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MusicActivity extends AppCompatActivity implements PageView, SwipeRefreshLayout.OnRefreshListener, MusicAdapter.AdapterChildClickListener {
+public class MusicActivity extends BaseActivity implements PageView, SwipeRefreshLayout.OnRefreshListener, MusicAdapter.AdapterChildClickListener {
 
+    private static final String URL = "URL";
     RecyclerView recylist ;
     SwipeRefreshLayout swipeRefreshLayout;
     private List<PageDataEntity> datas = new ArrayList<>();
@@ -76,6 +80,8 @@ public class MusicActivity extends AppCompatActivity implements PageView, SwipeR
 
     @Override
     public void AdapterChildClickListener(View v, int position, PageDataEntity entity) {
-
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(URL,entity.getHtml5());
+        startActivity(intent);
     }
 }

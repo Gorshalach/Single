@@ -19,5 +19,9 @@
 
     <dimen name="line_distance">1dp</dimen>
 
+    <dimen name="margin_large">100dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_middle">70dp</dimen>
+    <dimen name="padding_small">25dp</dimen>
 
 </resources>

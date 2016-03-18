@@ -4,14 +4,14 @@ import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class VideoActivity extends AppCompatActivity {
+public class VideoActivity extends BaseActivity {
 
     TextView pulltolist;
     TextView pulltolist1;
     /*
    List<HomeDataEntity> list = new ArrayList<>();
     Context context;
-    HomeAdapter adapter;
+    VideoAdapter adapter;
     PagePresenterImpl presenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class VideoActivity extends AppCompatActivity {
     private void initView() {
         pulltolist.setMode(PullToRefreshBase.Mode.PULL_FROM_START);
         pulltolist.setOnRefreshListener(this);
-        adapter = new HomeAdapter(list,this);
+        adapter = new VideoAdapter(list,this);
         pulltolist.setAdapter(adapter);
 
     }

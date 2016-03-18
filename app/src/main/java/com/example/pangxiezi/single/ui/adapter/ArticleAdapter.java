@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.pangxiezi.single.R;
 import com.example.pangxiezi.single.bean.ArticleDataEntity;
+import com.example.pangxiezi.single.bean.PageDataEntity;
 import com.example.pangxiezi.single.ui.activity.ArticleActivity;
 import com.squareup.picasso.Picasso;
 
@@ -21,7 +22,7 @@ import java.util.List;
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder> implements View.OnClickListener {
 
     private Context context;
-    private List<ArticleDataEntity> articleDataEntities;
+    private List<PageDataEntity> pageDataEntities;
 
     private RecyclerView recyclerView;
     private OnChildClickListener listener;
@@ -30,9 +31,9 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
         this.listener = listener;
     }
 
-    public ArticleAdapter(Context context, List<ArticleDataEntity> articleDataEntities) {
+    public ArticleAdapter(Context context, List<PageDataEntity> pageDataEntities) {
         this.context = context;
-        this.articleDataEntities = articleDataEntities;
+        this.pageDataEntities = pageDataEntities;
     }
 
     @Override
@@ -46,18 +47,18 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
     public void onBindViewHolder(ArticleViewHolder holder, int position) {
         Picasso picasso = Picasso.with(context);
         picasso.setIndicatorsEnabled(true);
-        picasso.load(articleDataEntities.get(position).getThumbnail())
+        picasso.load(pageDataEntities.get(position).getThumbnail())
                 .placeholder(R.mipmap.ic_launcher)
                 .error(R.mipmap.ic_launcher)
                 .into(holder.articleImg);
-        holder.articleTitle.setText(articleDataEntities.get(position).getTitle());
-        holder.articleAuthor.setText(articleDataEntities.get(position).getAuthor());
+        holder.articleTitle.setText(pageDataEntities.get(position).getTitle());
+        holder.articleAuthor.setText(pageDataEntities.get(position).getAuthor());
 
     }
 
     @Override
     public int getItemCount() {
-        return articleDataEntities != null ? articleDataEntities.size() : 0;
+        return pageDataEntities != null ? pageDataEntities.size() : 0;
     }
 
     @Override
@@ -70,7 +71,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
     public void onClick(View v) {
         if (recyclerView != null) {
             int position = recyclerView.getChildAdapterPosition(v);
-            listener.onChildClick(v, position, articleDataEntities.get(position).getHtml5());
+            listener.onChildClick(v, position, pageDataEntities.get(position).getHtml5());
         }
     }
 

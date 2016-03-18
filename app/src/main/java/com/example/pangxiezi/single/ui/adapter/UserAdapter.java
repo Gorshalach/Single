@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.pangxiezi.single.R;
 
+import java.util.Collection;
 import java.util.List;
 
 /**
