@@ -22,15 +22,17 @@
         <activity android:name=".ui.activity.UserActivity" />
         <activity android:name=".ui.activity.SettingActivity" />
         <activity android:name=".ui.activity.MenuActivity" />
-        <activity android:name=".ui.activity.DetailActivity"/>
+        <activity android:name=".ui.activity.DetailActivity" />
         <activity android:name=".ui.activity.SuggestionActivity" />
         <activity android:name=".ui.activity.AboutActivity" />
         <activity android:name=".ui.activity.FontActivity" />
         <activity android:name=".ui.activity.VideoActivity" />
         <activity android:name=".ui.activity.MusicActivity" />
         <activity android:name=".ui.activity.WebActivity" />
-        <activity android:name=".ui.activity.ArticleActivity"/>
-        <activity android:name=".ui.activity.DateActivity"/>
+        <activity android:name=".ui.activity.ArticleActivity" />
+        <activity android:name=".ui.activity.DateActivity" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.RegisterActivity"></activity>
     </application>
 
 </manifest>

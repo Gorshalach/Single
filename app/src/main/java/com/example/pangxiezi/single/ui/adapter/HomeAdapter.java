@@ -1,6 +1,7 @@
 package com.example.pangxiezi.single.ui.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.pangxiezi.single.R;
 import com.example.pangxiezi.single.bean.PageDataEntity;
+import com.facebook.drawee.view.SimpleDraweeView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -43,12 +45,13 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
 
     @Override
     public void onBindViewHolder(HomeViewHolder holder, int position) {
-        Picasso picasso = Picasso.with(context);
-        picasso.setIndicatorsEnabled(true);
-        picasso.load(pageDataEntities.get(position).getThumbnail())
-                .placeholder(R.mipmap.ic_launcher)
-                .error(R.mipmap.ic_launcher)
-                .into(holder.homeImg);
+//        Picasso picasso = Picasso.with(context);
+//        picasso.setIndicatorsEnabled(true);
+//        picasso.load(pageDataEntities.get(position).getThumbnail())
+//                .placeholder(R.mipmap.ic_launcher)
+//                .error(R.mipmap.ic_launcher)
+//                .into(holder.homeImg);
+        holder.homeImg.setImageURI(Uri.parse(pageDataEntities.get(position).getThumbnail()));
         holder.homeCategoryTxt.setText( pageDataEntities.get(position).getCategory());
         holder.homeTitleTxt.setText(pageDataEntities.get(position).getTitle());
         holder.homeExcerptTxt.setText(pageDataEntities.get(position).getExcerpt());
@@ -90,7 +93,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
 
         public HomeViewHolder(View itemView) {
             super(itemView);
-            homeImg = ((ImageView) itemView.findViewById(R.id.home_img));
+            homeImg = ((SimpleDraweeView) itemView.findViewById(R.id.home_img));
             homeCategoryTxt = ((TextView) itemView.findViewById(R.id.home_category_txt));
             homeTitleTxt = ((TextView) itemView.findViewById(R.id.home_title_txt));
             homeExcerptTxt = ((TextView) itemView.findViewById(R.id.home_excerpt_txt));

@@ -1,6 +1,7 @@
 package com.example.pangxiezi.single.ui.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.pangxiezi.single.R;
 import com.example.pangxiezi.single.bean.PageDataEntity;
+import com.facebook.drawee.view.SimpleDraweeView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -43,12 +45,13 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
     @Override
     public void onBindViewHolder(ArticleViewHolder holder, int position) {
-        Picasso picasso = Picasso.with(context);
-        picasso.setIndicatorsEnabled(true);
-        picasso.load(pageDataEntities.get(position).getThumbnail())
-                .placeholder(R.mipmap.ic_launcher)
-                .error(R.mipmap.ic_launcher)
-                .into(holder.articleImg);
+//        Picasso picasso = Picasso.with(context);
+//        picasso.setIndicatorsEnabled(true);
+//        picasso.load(pageDataEntities.get(position).getThumbnail())
+//                .placeholder(R.mipmap.ic_launcher)
+//                .error(R.mipmap.ic_launcher)
+//                .into(holder.articleImg);
+        holder.articleImg.setImageURI(Uri.parse(pageDataEntities.get(position).getThumbnail()));
         holder.articleTitle.setText(pageDataEntities.get(position).getTitle());
         holder.articleAuthor.setText(pageDataEntities.get(position).getAuthor());
 
@@ -75,13 +78,13 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleV
 
     public static class ArticleViewHolder extends RecyclerView.ViewHolder {
 
-        private final ImageView articleImg;
+        private final SimpleDraweeView articleImg;
         private final TextView articleTitle;
         private final TextView articleAuthor;
 
         public ArticleViewHolder(View itemView) {
             super(itemView);
-            articleImg = ((ImageView) itemView.findViewById(R.id.article_img));
+            articleImg = ((SimpleDraweeView) itemView.findViewById(R.id.article_img));
             articleTitle = ((TextView) itemView.findViewById(R.id.article_title_txt));
             articleAuthor = ((TextView) itemView.findViewById(R.id.article_author_txt));
         }

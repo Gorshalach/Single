@@ -7,6 +7,7 @@
     <color name="grey">#FFD6D6D6</color>
     <color name="darkgray">#645c5c</color>
     <color name="background">#FF303030</color>
+    <color name="alphbackground">#33303030</color>
 
     <color name="swiprefreshColor1">#111111</color>
     <color name="swiprefreshColor2">#ff1111</color>
