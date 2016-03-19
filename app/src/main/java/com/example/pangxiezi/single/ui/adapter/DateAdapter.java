@@ -52,6 +52,9 @@ public class DateAdapter extends AppBaseAdapter<PageDataEntity> {
             img = (SimpleDraweeView) itemView.findViewById(R.id.simpleView_item_date);
         }
     }
+    public int getHeight(){
+            return height;
+    }
 
 
 }

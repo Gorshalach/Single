@@ -16,7 +16,7 @@ import com.example.pangxiezi.single.api.ApiConstant;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class WebActivity extends AppCompatActivity {
+public class WebActivity extends BaseActivity {
     @Bind(R.id.webView_web)
     WebView webView;
     private String url ="";

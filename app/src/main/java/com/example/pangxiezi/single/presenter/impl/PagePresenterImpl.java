@@ -14,20 +14,25 @@ import retrofit2.Response;
  * Created by pangxiezi on 2016/3/15.
  */
 public class PagePresenterImpl implements PagePresenter {
-    private int page,paget_id,create_time,model;
+    private int page,page_id,create_time,model;
     private PageView view;
 
-    public PagePresenterImpl(int page,int model, int paget_id, int create_time, PageView view) {
+    public PagePresenterImpl(int page,int model, int page_id, int create_time, PageView view) {
         this.page = page;
-        this.paget_id = paget_id;
+        this.page_id = page_id;
         this.create_time = create_time;
         this.model = model;
         this.view = view;
     }
-
+    public void toMoreData(int page,int model, int page_id, int create_time){
+        this.page = page;
+        this.page_id = page_id;
+        this.create_time = create_time;
+        this.model = model;
+    }
     @Override
     public void getEntityData() {
-        ModelFactory.newInstance().getHomepageModelImpl().getHomeData(page, paget_id, create_time, model, new Callback<PageEntity>() {
+        ModelFactory.newInstance().getHomepageModelImpl().getHomeData(page, page_id, create_time, model, new Callback<PageEntity>() {
             @Override
             public void onResponse(Call<PageEntity> call, Response<PageEntity> response) {
                 view.getData(response.body());
