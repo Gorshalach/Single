@@ -1,50 +1,18 @@
 [
     {
-        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
-        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
+        "merged": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
     },
     {
-        "merged": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
-        "source": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
+        "merged": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
     },
     {
-        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
-        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+        "merged": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
     },
     {
-        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
-        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
-    },
-    {
-        "merged": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
-        "source": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
-    },
-    {
-        "merged": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
-        "source": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
-    },
-    {
-        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
-        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
-    },
-    {
-        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
-        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
-    },
-    {
-        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
-        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
-    },
-    {
-        "merged": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
-        "source": "E:\\ProjectCode\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
-    },
-    {
-        "merged": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
-        "source": "E:\\ProjectCode\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
-    },
-    {
-        "merged": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
-        "source": "E:\\Users\\zhangwei\\work\\projects\\demo\\Sybl\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
+        "merged": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "D:\\project\\Single\\PullToRefreshLib\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
     }
 ]

@@ -16,9 +16,13 @@ import com.example.pangxiezi.single.bean.PageDataEntity;
 import com.example.pangxiezi.single.bean.PageEntity;
 import com.example.pangxiezi.single.presenter.PagePresenter;
 import com.example.pangxiezi.single.presenter.impl.PagePresenterImpl;
+import com.example.pangxiezi.single.ui.adapter.DateRecAdapter;
+import com.example.pangxiezi.single.ui.adapter.DateRecyclerPageAdapter;
 import com.example.pangxiezi.single.ui.adapter.HomeAdapter;
+import com.example.pangxiezi.single.ui.adapter.HomeRecyclerPageAdapter;
 import com.example.pangxiezi.single.ui.widget.GestureListener;
 import com.example.pangxiezi.single.view.PageView;
+import com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,10 +34,11 @@ public class MainActivity extends BaseActivity implements PageView, View.OnClick
 
     private static final String URL = "URL";
 
+    private HomeRecyclerPageAdapter pageAdapter;
     @Bind(R.id.main_recycler)
-    RecyclerView mainRecycler;
+    RecyclerViewPager recycler;
     private HomeAdapter adapter;
-    private List<PageDataEntity> pageDataEntities;
+    private List<PageDataEntity> pageDataEntities = new ArrayList<>();
 
     private PagePresenter pagePresenter;
     private int page, model, paget_Id, create_time;
@@ -52,22 +57,39 @@ public class MainActivity extends BaseActivity implements PageView, View.OnClick
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        initData();
+        initEvent();
+
+    }
+
+    private void initData() {
         pagePresenter = new PagePresenterImpl(page, model, paget_Id, create_time, this);
         pagePresenter.getEntityData();
 
-        mainRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-
-        initEvent();
-        mainLayout.setLongClickable(true);
-        mainLayout.setOnTouchListener(new MyGestureListener(this));
-
+        adapter = new HomeAdapter(this, pageDataEntities);
+        adapter.setOnChildClickListener(this);
+        recycler.setLayoutManager(new LinearLayoutManager(this));
+        pageAdapter = new HomeRecyclerPageAdapter(recycler,adapter);
+        recycler.setAdapter(pageAdapter);
     }
 
     private void initEvent() {
         mentIbtn.setOnClickListener(this);
         userIbtn.setOnClickListener(this);
+        mainLayout.setLongClickable(true);
+        mainLayout.setOnTouchListener(new MyGestureListener(this));
     }
 
+    @Override
+    public void getData(PageEntity entity) {
+//        pageDataEntities = entity.getDatas();
+////        adapter.notifyDataSetChanged();
+//        adapter = new HomeAdapter(this, pageDataEntities);
+//        recycler.setAdapter(adapter);
+//        adapter.setOnChildClickListener(this);
+        pageDataEntities.addAll(entity.getDatas());
+        adapter.notifyDataSetChanged();
+    }
 
     @Override
     protected void onDestroy() {
@@ -120,15 +142,6 @@ public class MainActivity extends BaseActivity implements PageView, View.OnClick
             overridePendingTransition(R.anim.in_from_left, R.anim.out_from_right);
             return super.right();
         }
-    }
-
-
-    @Override
-    public void getData(PageEntity entity) {
-        pageDataEntities = entity.getDatas();
-        adapter = new HomeAdapter(this, pageDataEntities);
-        mainRecycler.setAdapter(adapter);
-        adapter.setOnChildClickListener(this);
     }
 
     @Override

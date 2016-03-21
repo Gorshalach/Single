@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.pangxiezi.single.R;
+import com.example.pangxiezi.single.ui.adapter.DateAdapter;
 import com.example.pangxiezi.single.ui.adapter.MenuAdapter;
 import com.example.pangxiezi.single.ui.widget.GestureListener;
 import com.example.pangxiezi.single.ui.widget.MyItemAnimator;
@@ -88,22 +89,24 @@ public class MenuActivity extends BaseActivity implements View.OnClickListener, 
     public void onChildClick(View child, int position, String menuName) {
         switch (menuName) {
             case "首页":
-                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, MainActivity.class));
                 break;
             case "文字":
-                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, ArticleActivity.class));
                 break;
             case "声音":
-                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, MusicActivity.class));
                 break;
             case "影像":
-                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, VideoActivity.class));
                 break;
             case "单向历":
-                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this, DateActivity.class));
                 break;
             case "搜索":
                 Toast.makeText(this, menuName, Toast.LENGTH_SHORT).show();

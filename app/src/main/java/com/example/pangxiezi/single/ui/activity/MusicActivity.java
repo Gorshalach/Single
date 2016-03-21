@@ -2,7 +2,6 @@ package com.example.pangxiezi.single.ui.activity;
 
 import android.content.Intent;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,7 +18,7 @@ import com.example.pangxiezi.single.view.PageView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MusicActivity extends AppCompatActivity implements PageView, SwipeRefreshLayout.OnRefreshListener, MusicAdapter.AdapterChildClickListener {
+public class MusicActivity extends BaseActivity implements PageView, SwipeRefreshLayout.OnRefreshListener, MusicAdapter.AdapterChildClickListener {
 
     RecyclerView recylist ;
     SwipeRefreshLayout swipeRefreshLayout;

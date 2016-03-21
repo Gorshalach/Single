@@ -72,6 +72,9 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.back_btn:
+                finish();
+                break;
             case R.id.rl_version_number_btn:
                 Toast.makeText(this, "已是最新版本", Toast.LENGTH_LONG).show();
                 break;
